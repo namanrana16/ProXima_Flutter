@@ -6,9 +6,19 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 
 void main() {
-  runApp(LoginScreen());
+  runApp(MyApp());
 }
 
+
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LoginScreen(),
+    );
+  }
+}
 
 class LoginScreen extends StatefulWidget {
   @override
