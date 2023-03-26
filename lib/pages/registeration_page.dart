@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_application_1/main.dart';
 
 class RegisterScreen extends StatefulWidget {
   @override
@@ -65,6 +66,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         },
                         child: Text('Register'),
                       ),
+                      TextButton(
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ),
+                        ),
+                        child: Text('Already have an account? Login'),
+                      )
                     ],
                   ),
                 ),
