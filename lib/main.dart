@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_application_1/pages/home_tab.dart';
 import 'package:flutter_application_1/pages/registeration_page.dart';
 
 
@@ -115,7 +116,10 @@ class _LoginScreenState extends State<LoginScreen> {
       );
 
       // If login is successful, navigate to the home screen
-      Navigator.pushReplacementNamed(context, '/home');
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyHomePage()),
+      );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         showDialog(
@@ -131,6 +135,10 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         );
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MyHomePage()),
+        );
       } else if (e.code == 'wrong-password') {
         showDialog(
           context: context,
@@ -145,11 +153,19 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         );
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MyHomePage()),
+        );
       }
     } finally {
       setState(() {
         _isLoading = false;
       });
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyHomePage()),
+      );
     }
   }
 }
