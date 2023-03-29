@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1005920885227",
+    "project_id": "proxima-flutter",
+    "storage_bucket": "proxima-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005920885227:android:210269ba109639a809e1ae",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005920885227-b4c7u2e6t15pkph3rvo6g9onp82bud80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhegYhWQjjBNHA2jhd-DM_BHPSfWSvgdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005920885227-b4c7u2e6t15pkph3rvo6g9onp82bud80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
