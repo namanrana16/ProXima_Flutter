@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/profile_tab.dart';
 import 'package:flutter_application_1/pages/search_tab.dart';
+import 'package:flutter_application_1/widgets/card.dart';
 
 class MyHomePage extends StatelessWidget {
   int _selectedIndex = 0;
@@ -24,12 +25,12 @@ class MyHomePage extends StatelessWidget {
       body: ListView.builder(
         itemCount: cardData.length,
         itemBuilder: (BuildContext context, int index) {
-          return Card(
+          return   MySplitCardWidget();/*Card(
             child: ListTile(
               title: Text(cardData[index]['title']!),
               subtitle: Text(cardData[index]['subtitle']!),
             ),
-          );
+          );*/
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
